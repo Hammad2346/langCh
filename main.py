@@ -23,7 +23,7 @@ agent=create_agent(
 response=agent.invoke(
 {    
  "messages": [
-        {"role": "user", "content": "what is the weather in lahore"}
+        {"role": "user", "content": "what is the weather in karachi"}
     ]
  })
 print(response['messages'][-1].content)
