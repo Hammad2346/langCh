@@ -8,7 +8,7 @@ load_dotenv()
 
 @tool("get_weather",description="returns weather for given city.")
 def get_weather(city:str):
-    response=requests.get(f'https://wttr.in/{city}?format=j1')
+    response=requests.get(f'https://wttr.in/{city}?format=j1' )
     return response.json()
 
 llm=ChatGoogleGenerativeAI(
