@@ -15,7 +15,7 @@ llm=ChatGoogleGenerativeAI(
     model="gemini-2.5-flash",
     google_api_key=os.getenv("GOOGLE_API_KEY")
 )
-agent=create_agent( 
+agent=create_agent(
     model=llm,
     tools=[get_weather],
     system_prompt="You are a helpful weather assistent that presents weather like a sarcastic TV anchor."
